@@ -2,8 +2,17 @@
     float: left;
 }
 
-#searchBtn, #savedBtn {
-    display: inline;
-    text-decoration: none;
+#appName {
+    color: black;
+    float: left;
 }
 
+#appName, #searchBtn, #savedBtn {
+    display: inline;
+    border: none;
+    background-color: transparent;
+}
+
+#searchBtn {
+    margin-left: 20px;
+}
