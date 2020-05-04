@@ -9,9 +9,9 @@ function BookSearch() {
             <i className="fas fa-book"></i> Book Search
             </div>
             <div className="card-body">
-                <h5 className="card-title">Special title treatment</h5>
-                <p className="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                <a href="#" className="btn btn-danger">Search</a>
+                <h5 id="bookSearch" className="card-title">Book</h5>
+                <input id="field" type="book" className="form-control" id="exampleFormControlInput1" placeholder="Timeline"/>
+                <a id="search" href="#" className="btn btn-danger">Search</a>
             </div>
             </div>
         </div>

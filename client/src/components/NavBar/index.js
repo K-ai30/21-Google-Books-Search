@@ -4,8 +4,10 @@ import './style.css';
 function NavBar() {
     return (
         <nav className="navbar navbar-light bg-light">
-            <button className="navbar-brand mb-0 h1">Search</button>
-            <button className="navbar-brand mb-0 h1">Saved</button>
+            <div>
+                <button id="searchBtn" className="navbar-brand mb-0 h1">Search</button>
+                <button id="savedBtn" className="navbar-brand mb-0 h1">Saved</button>
+            </div>        
         </nav>
     )
 }
