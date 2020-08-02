@@ -2,7 +2,7 @@
 
 ### Description
 
-This React-based Google Books Search application 
+This is a React-based Google Books Search application that allows a user to search and save books from Google that interest them.  The app stores the list of saved books to a database while allowing the user to search for and read descriptions of various books.  The user can also delete books from their list after they have read them.
 
 # Getting Started
 
@@ -30,10 +30,16 @@ Or, visit the deployed version at:
 
 ### Technologies Utilized:
 
-* HTML
-* CSS
+* HTML5
+* CSS3
+* Bootstrap
 * JavaScript
+* MongoDB
+* Mongoose
+* Express
 * React
+* React-Router-DOM
+* Node.js
 
 ### Demo
 
@@ -41,9 +47,11 @@ Or, visit the deployed version at:
 
 ### Notes
 
-
+I started building this application in an effort to achieve a minimum viable product (MVP). To that end, we hope to achieve some future dated development ideas that will enhance the functionality and user engagement within the application.
 
 ### Author
+
+The original contributors to this project are the following full stack developers:
 
 - Alia Kyle Perry (full stack developer)
 
