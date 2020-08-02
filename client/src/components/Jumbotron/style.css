@@ -3,10 +3,12 @@
     background-color: rgba(0,0,0,.03);
 }
 
-h1 {
+#heading {
     color: #ffffff;
+    text-align: center;
 }
 
-h3 {
+#subheading {
     color: #ffffff;
+    text-align: center;
 }
