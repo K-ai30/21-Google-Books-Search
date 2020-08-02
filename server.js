@@ -3,7 +3,7 @@ const express = require("express");
 const mongoose = require("mongoose");
 const routes = require("./routes");
 const app = express();
-require('dotenv').config();
+require("dotenv").config();
 const PORT = process.env.PORT || 3012;
 
 const db = require("./models");
@@ -19,9 +19,12 @@ if (process.env.NODE_ENV === "production") {
 app.use(routes);
 
 // Connect to the Mongo DB
-mongoose.connect(process.env.MONGODB_URI || "mongodb://<dbuser>:<dbpassword>@ds333248.mlab.com:33248/heroku_rdl96v68");
+mongoose.connect(
+  process.env.MONGODB_URI ||
+    "mongodb://<dbuser>:<dbpassword>@ds333248.mlab.com:33248/heroku_rdl96v68"
+);
 
 // Start the API server
-app.listen(PORT, function() {
+app.listen(PORT, function () {
   console.log(`🌎  ==> API Server now listening on PORT ${PORT}!`);
 });
