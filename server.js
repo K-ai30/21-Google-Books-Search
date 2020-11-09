@@ -11,10 +11,15 @@ const db = require("./models");
 
 // Connect to the Mongo DB
 mongoose.connect(
-  process.env.MONGODB_URI ||
+  process.env.DB_URI ||
     "mongodb://<dbuser>:<dbpassword>@ds333248.mlab.com:33248/heroku_rdl96v68",
   { useNewUrlParser: true }
 );
+
+// If deployed, use the deployed database.  Otherwise use the local mongoHeadlines database
+var DB_URI = process.env.DB_URI || "mongodb://localhost/mongoHeadlines";
+// Connect to the Mongo DB
+mongoose.connect(DB_URI);
 
 // Define middleware here
 app.use(express.urlencoded({ extended: true }));
